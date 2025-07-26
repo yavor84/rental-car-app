@@ -1,5 +1,15 @@
+import { Outlet } from 'react-router-dom';
+import AppBar from '../AppBar/AppBar.jsx';
+
 function Layout() {
-  return <div>Layout</div>;
+  return (
+    <div>
+      <AppBar />
+      <main>
+        <Outlet />
+      </main>
+    </div>
+  );
 }
 
 export default Layout;
